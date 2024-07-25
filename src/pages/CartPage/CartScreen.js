@@ -42,17 +42,6 @@ const CartScreen = () => {
     }   
   };
 
-  // const decrementItem = (id) => {
-  //   setCartItems(cartItems.map(item => 
-  //     item.product_Id === id && item.totalNumberOfCards > 0 ? { ...item, totalNumberOfCards: item.totalNumberOfCards - 1 } : item
-  //   ));
-
-
-
-  // const cardModel = new CardModel(product.id, product.title, product.category, product.price, product.image);
-  // await cardRepository.addCard(cardModel);
-  // };
-
   const decrementItem = async (id) => {
     const updatedItems = cartItems.map(item =>
       item.product_Id === id ? { ...item, totalNumberOfCards: item.totalNumberOfCards - 1 } : item

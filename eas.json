@@ -2,7 +2,7 @@
     "build": {
       "production": {
         "env": {
-          "EXPO_PUBLIC_KARGOMOBIL": "https://api.example.com"
+          "API_URL": "https://api.example.com"
         }
       },
       "preview": {
@@ -12,16 +12,16 @@
           "buildType": "apk"
         },
         "env": {
-          "EXPO_PUBLIC_KARGOMOBIL": "https://preview.api.example.com"
+          "API_URL": "https://preview.api.example.com"
         }
       },
       "development": {
         "extends": "production",
         "distribution": "internal",
         "env": {
-          "EXPO_PUBLIC_KARGOMOBIL": "https://dev.api.example.com"
+          "API_URL": "https://dev.api.example.com"
         }
       }
     }
-  }
+  } 
   

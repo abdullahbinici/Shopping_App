@@ -3,7 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { View, Image, Text, TouchableOpacity  } from 'react-native';
 import { getFocusedRouteNameFromRoute } from '@react-navigation/native';
-import { CardRepository } from '../repositories/card/business/CartRepository';
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
 

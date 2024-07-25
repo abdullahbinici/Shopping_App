@@ -12,13 +12,13 @@ const rootNavigation = () => {
 
     return(
         <CartProvider>
-        <NavigationContainer>
-            {
-                !isAuth
-                    ? <AuthStack/>
-                    : <UserStack/>
-            }
-        </NavigationContainer>
+            <NavigationContainer>
+                {
+                    !isAuth
+                        ? <AuthStack/>
+                        : <UserStack/>
+                }
+            </NavigationContainer>
         </CartProvider>
     )
 }
